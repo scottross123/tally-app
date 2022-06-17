@@ -69,10 +69,7 @@ export const useCounter = (props: counterProps) => {
         increment: () => dispatch({ type: 'increment', payload: state.incStep }),
         decrement: () => dispatch({ type: 'decrement', payload: state.decStep }),
         reset: () => dispatch({ type: 'reset', payload: state.resetTo }),
-        //setIncStep: () => dispatch({ type: 'set-inc-step', payload: initialIncStep ?? 1 }),
-        //setDecStep: () => dispatch({ type: 'set-dec-step', payload: initialDecStep ?? 1}),
+        setIncStep: (step: number) => dispatch({ type: 'set-inc-step', payload: step }),
+        setDecStep: (step: number) => dispatch({ type: 'set-dec-step', payload: step }),
     }
 }
-
-
-// change this to useReducer. add custom step for inc and dec
