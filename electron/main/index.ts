@@ -51,6 +51,8 @@ const createWindow = () => {
     if (url.startsWith('https:')) shell.openExternal(url)
     return { action: 'deny' }
   })
+
+  win.webContents.openDevTools()
 }
 
 const createTray = () => {
