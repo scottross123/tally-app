@@ -1,11 +1,14 @@
-import Counter from './components/Counter';
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Tally from "./pages/tally/Tally";
 
 const App = () => {
   return (
-    <div style={{display: 'flex', justifyContent: 'center'}}>
-      <Counter />
-    </div>
+      <div className='app' >
+        <Tally />
+      </div>
   );
-};
+}
 
 export default App;

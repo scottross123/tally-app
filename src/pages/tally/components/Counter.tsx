@@ -1,4 +1,4 @@
-import { useCounter } from '../hooks/useCounter';
+import { useCounter } from '../../../hooks/useCounter';
 
 const Counter = () => {
     const { value, increment, decrement, reset, setIncStep } = useCounter({ initialValue: 2, initialIncStep: 2});
